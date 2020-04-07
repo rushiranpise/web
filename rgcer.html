@@ -1,11 +1,16 @@
 <html>
+        <title>
+        RGCER
+        </title>
 <head>
     <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
     <script src=" https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+    
 </head>
 <body style='margin : 0px; overflow: hidden;'>
-  <a-scene embedded arjs="debugUIEnabled:false; sourceType: webcam;" vr-mode-ui="enabled: false">
+  <a-scene embedded arjs="cameraParametersUrl:
+https://jeromeetienne.github.io/AR.js/data/data/camera_para.dat;" arjs="debugUIEnabled:false; sourceType: webcam;" vr-mode-ui="enabled: false">
       <a-plane src="rgcer.png" position="0 0 0" rotation="0 0 0" width="auto" height="auto"></a-plane>
       <a-marker-camera preset='custom' type='pattern' url='datta.patt'></a-marker-camera>
       <a-entity camera></a-entity>

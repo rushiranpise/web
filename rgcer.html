@@ -7,9 +7,8 @@
      <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>        
      <script src="https://jeromeetienne.github.io/AR.js/three.js/build/ar.min.js"></script>
 </head>
-<body>
-  <a-scene embedded arjs="cameraParametersUrl:
-https://jeromeetienne.github.io/AR.js/data/data/camera_para.dat;" arjs="debugUIEnabled:false; sourceType: webcam;" vr-mode-ui="enabled: false">
+<body  style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs="cameraParametersUrl:camera_para.dat;" arjs="debugUIEnabled:false; sourceType: webcam;" vr-mode-ui="enabled: false">
       <a-plane src="rgcer.png" position="0 0 0" rotation="0 0 0" width="auto" height="auto"></a-plane>
       <a-marker-camera preset='custom' type='pattern' url='datta.patt'></a-marker-camera>
       <a-entity camera></a-entity>
